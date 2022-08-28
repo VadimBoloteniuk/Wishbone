@@ -71,7 +71,6 @@ body {
     width: 100%;
     background: #ECE7E4;
     font-family: 'Poppins';
- 
     font-weight: 400;
     background-image: url('img/first-screen-photo.png');
     background-repeat: no-repeat;
@@ -147,17 +146,17 @@ body {
     margin-bottom: 10px;
 }
 
-.about-firm-screen__imagebox {
+.person {
     display: flex;
 }
 
-.about-firm-screen__image {
+.person__image {
     margin-right: 30px;
     margin-top: 8px;
     margin-bottom: 8px;
 }
 
-.about-firm-screen__imagebox-title {
+.person__name {
     margin-top: 30px;
     font-weight: 400;
     font-size: 17px;
@@ -165,7 +164,7 @@ body {
     color: #1B1A1A;
 }
 
-.about-firm-screen__imagebox-title-small {
+.person__qualification {
     color: #645C55;
     margin-bottom: 33px;
     font-weight: 400;
@@ -173,7 +172,7 @@ body {
     line-height: 14px;
 }
 
-.about-firm-screen__imagebox-text {
+.person__desc {
     width: 100%;
 }
 
@@ -399,7 +398,8 @@ body {
 
 .featured-projects {
     background: #F7F7F7;
-    height: 918px;
+    display: flex;
+    flex-direction: column;
 }
 
 .featured-projects_title {
@@ -491,7 +491,7 @@ body {
     display: inline-block;
     padding: 11px 20px;
     background-color: #1B1A1A;
-    color: #FFFFFF;
+    color: #ffffff;
     border-radius: 14px;
     margin-left: 45px;
     width: 133px;
@@ -511,20 +511,21 @@ body {
 
 /* featured-projects - end */
 
-/* our-team - start */
+/* team-section - start */
 
-.our-team {
+.team-section_container {
+    max-width: 1168px;
     display: flex;
+    margin-top: 100px;
 }
 
-.our-team_text {
-    margin-left: 136px;
-    margin-right: 37px;
+.team-desc {
+    width: 378px;
+    padding-right: 20px;
+    margin-right: 16px;
 }
 
-.our-team_title {
-    font-family: 'Poppins';
-    font-style: normal;
+.team-desc_title {
     font-weight: 400;
     font-size: 32px;
     line-height: 38px;
@@ -532,72 +533,130 @@ body {
     margin-bottom: 14px;
 }
 
-.our-team_content {
-    font-family: 'Poppins';
-    font-style: normal;
+.team-desc_text {
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
     color: #645C55;
-    width: 358px;
-    margin-bottom: 41px;
+    margin-bottom: 30px;
 }
 
-.our-team_short-title {
-    font-family: 'Poppins';
-    font-style: normal;
+.team-sesc_btn {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px; 
+    letter-spacing: 0.4px;
+    color: #1B1A1A;
+    padding: 11px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.team-persons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    row-gap: 36px;
+}
+
+/* team-section - end */
+
+@media screen and (max-width:1330px) {
+    .first-screen__text {
+        background-color: #ece7e490;
+    }
+    .container {
+        padding: 0px 5%;
+    }
+}
+
+@media screen and (max-width:860px) {
+    .header-nav {
+        display: none;
+    }
+}
+
+.question-container_title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #645C55;
+}
+
+.question-container_item {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 42px;
+    color: #1B1A1A;
+}
+
+.question-container_btn {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.4px;
     color: #1B1A1A;
-    margin-left: 25px;
+    text-decoration: none;
+    margin-left: 467px;
+    margin-top: 145px;
 }
 
-.our-team_images {
-    display: flex;
-    width: 773px;
-    height: 392px;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.our-team_items {
-    width: 280px;
-    height: 100px;
+.question-container {
+    background: #CEC4BC;
+    height: 314px;
     display: flex;
 }
 
-.our-team_item-img {
-    justify-self: center;
-    align-self: center;
-}
-
-.our-team_item-text {
+.question-container_text {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-left: 30px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 136px;
+    width: 576px;
 }
 
-.our-team_item-title {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 26px;
-    color: #1B1A1A;
-    justify-self: center;
+.last-section_container {
+    height: 204px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.our-team_item-content {
-    font-family: 'Poppins';
-    font-style: normal;
+.last-section_inner {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 136px;
+}
+
+.last-section_text-part1 {
     font-weight: 400;
     font-size: 14px;
-    line-height: 14px;
-    color: #645C55;
-    justify-self: center;
+    line-height: 20px;
+    color: #645C55
 }
 
-/* our-team - end */
+.last-section_text-part2 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #645C55
+}
+
+.last-section_title {
+    margin-bottom: 20px;
+}
+
+.last-section_icons {
+    display: flex;
+    justify-content: space-between;
+    width: 112px;
+    margin-top: 120px;
+    margin-right: 136px;
+}
